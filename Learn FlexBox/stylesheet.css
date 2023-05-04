@@ -1,0 +1,61 @@
+.nav-list {
+  border: 5px solid brown;
+  margin:0;
+  padding:0;
+  list-style: none;
+
+  display: flex;
+  gap:1rem;
+  flex-wrap: wrap;
+  /* here this works because we have some space left over */
+  justify-content: center; 
+}
+
+/** 
+  <li> is a flex-item (only the direct decendant of the flex parent is the flex item)
+  -flex-grow & flex-shrink are the flex-item properties
+*/
+.nav-list > li {
+border:5px solid lightgreen;
+/* width:max-content;  */  
+/* flex-grow: 1; */
+/* flex-shrink: 1; */
+}
+
+/**
+ - Here the column width created using flex are not equal [difference b/w flex & Grid]
+ */
+
+.column{
+  margin-top: 2rem;
+  border: 2px solid blueviolet;
+  display:flex;
+  flex-direction: row;
+  gap:1rem;
+  /* align-items: center; */
+}
+
+.card{
+  background-color: lightgrey;
+  padding: 10px;
+}
+
+/* Selecting the direct decendant of the column which is article */
+/* flex: 1 --  Creates the equal columns */
+
+.column > *{
+  /* flex:1; */
+  /* The ablove is equivalent to the below. Baically flex is the short hand for the below syntax */
+  flex-grow:1;
+  flex-shrink: 1;
+  /* flex-basic is kinda width for flex-items but not exactly a width */
+  flex-basis: 0;
+}
+
+@media (max-width:600px) {
+  .column{
+    flex-direction: column;
+  }
+}
+
+

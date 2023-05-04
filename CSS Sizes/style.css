@@ -1,0 +1,16 @@
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+p{
+  font-size:1.5rem;
+  margin:0.25em;
+  padding:0.25em;
+  background-color: bisque;
+}
+
+section>p {
+  background-color: gray;
+}
