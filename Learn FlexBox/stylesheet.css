@@ -45,7 +45,7 @@ border:5px solid lightgreen;
 
 .column > *{
   /* flex:1; */
-  /* The ablove is equivalent to the below. Baically flex is the short hand for the below syntax */
+  /* The above is equivalent to the below. Baically flex is the short hand for the below syntax */
   flex-grow:1;
   flex-shrink: 1;
   /* flex-basic is kinda width for flex-items but not exactly a width */

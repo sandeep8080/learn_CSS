@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question1</title>
+    <style>
+      .squareToCircle {
+        border: 1px solid black;
+        height: 100px;
+        width: 100px;
+      }
+
+      .squareToCircle::after {
+        content: "";
+        border: 1px solid red;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <h1>Interview Question Circle Inside Square using just one div</h1>
+    <div class="squareToCircle"></div>
+  </body>
+</html>

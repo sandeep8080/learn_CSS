@@ -25,21 +25,21 @@ h2 {
   width: 80vw;
   border: 1px solid red;
   margin: 40px;
-  /* position: relative; */
+  /* position: absolute; */
 }
 
-.inner1-container {
+/* .inner1-container {
   height: 90vh;
   width: 60vw;
   border: 1px solid green;
   margin: 40px;
-}
+} */
 
 /**
-* Absolute position need a parent whoes position is relative (if any)
-* if not => the element is positioned based on the initial block/content/boundary 
-*/
-.position-absolute {
+  * Absolute position need a parent whoes position is relative (if any)
+  * if not => the element is positioned based on the initial block/content/boundary
+  */
+.position-absolute1 {
   background-color: aqua;
   position: absolute;
   height: 100px;
@@ -47,25 +47,22 @@ h2 {
   top: 0;
   left: 0;
 }
-.position-relative {
+.position-absolute2 {
   background-color: gray;
-  position: relative;
+  position: absolute;
   height: 100px;
   width: 100px;
   top: 10px;
   left: 10px;
 }
-.position-fixed {
-  background-color: navy;
-  position: fixed;
-  height: 100px;
-  width: 100px;
-}
 
-.position-sticky {
-  background-color: purple;
-  position: sticky;
+/** if top left right bottom positions are not defined then the element will 
+    be aligned in the normal flow 
+*/
+
+.position-absolute3 {
+  background-color: navy;
+  position: absolute;
   height: 100px;
   width: 100px;
-  top: 0;
 }
